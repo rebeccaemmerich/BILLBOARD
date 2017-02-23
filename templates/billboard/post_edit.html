@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+
+
+{% extends 'billboard/base.html' %}
+{% block content %}
+  {% for post in posts %}
+            <div class = "border posts">
+                <p class = "date">{{ post.date }}</p>
+                <p class="title">{{ post.title }}</p>
+                <p>{{ post.text|linebreaksbr }}</p>
+                <p class = "author">{{post.author}}</p>
+            </div>
+        {% endfor %}
+
+
+<form method="POST" class="form-actions align">{% csrf_token %}
+        {{ form.as_p }}
+         <button method = "POST" class = "check" type="submit" class="save btn btn-default">√</button>
+    </form>
+
+ <form class=" align">{% csrf_token %}
+         <button class = "x" class=" btn" value="Cancel">x</button>
+    </form>
+{% endblock %}
+

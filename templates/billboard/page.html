@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+<html>
+    <head>
+        <title class="text">BILLBOARD</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/billboard.css' %}">
+    </head>
+    <body class = "text">
+        <div>
+            <h1 class = "billboard">BILLBOARD</h1>
+        </div >
+        <!--<div id = "gone">-->
+            <!--<p>No Messages....</p>-->
+            <!--<p>Click the + button to add a new message</p>-->
+        <!--</div>-->
+        {% for post in posts %}
+            <div class = "border posts">
+                <p class = "date">{{ post.date }}</p>
+                <p class="title">{{ post.title }}</p>
+                <p>{{ post.text|linebreaksbr }}</p>
+                <p class = "author">{{post.author}}</p>
+            </div>
+        {% endfor %}
+
+
+
+        <div >
+        <FORM class ="dash" METHOD="LINK" ACTION="post/new">
+            <INPUT class = "plus" TYPE="submit" VALUE="+">
+        </FORM>
+        </div>
+
+    </body>
+</html>

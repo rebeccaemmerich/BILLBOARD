@@ -1,0 +1,82 @@
+.text {
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    font-family: Anton;
+    margin-top: 100px;
+}
+
+.border{
+    border-style: solid ;
+    border-color: #00b7ef ;
+    border-width: 5px
+}
+.borderDash{
+     border-style: dashed ;
+    border-color: #00b7ef ;
+    border-width: 5px;
+    margin-bottom: 30px;
+}
+.posts{
+    margin-bottom: 60px;
+    margin-left: 140px;
+    margin-right: 140px;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 20px;
+    color: #c1bfc0;
+}
+.title{
+    font-family: Anton;
+    font-size: 50px;
+    Color:#00b7ef
+}
+.billboard{
+    font-size: 40px;
+    color: black;
+    margin-bottom: 50px;
+}
+.date{
+    text-align: left;
+    border-top: 20px;
+}
+.plus{
+    font-size: 16px;
+    background-color: #66CDAA ;
+    Color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-right: 13px;
+    padding-left: 13px;
+/*Radius :3px;*/
+}
+.author{
+    text-align: right;
+    padding-right: 20px;
+}
+.dash{
+    border-style: dashed;
+    border-color: black;
+    margin-right: 140px ;
+    margin-left: 140px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+.check{
+    background-color:  #66CDAA;
+    margin-left: 160px;
+    color: white;
+
+}
+.x{
+
+    margin-right: 150px;
+    background-color: red;
+    color: white;
+    display: inline-block;
+}
+
+.align{
+    display: inline-block;
+}
